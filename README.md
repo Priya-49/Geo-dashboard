@@ -1,4 +1,5 @@
-Here are the commands to set up and run this timeline dashboard project:
+# Geo-Dashboard
+#### A Next.js timeline dashboard with an interactive map, real-time data visualization, and dynamic polygon coloring.
 
 ## Initial Setup
 
@@ -15,6 +16,19 @@ cd geo-dashboard
 ```
 
 ## Install Required Dependencies
+
+### Core Mapping Libraries 🌍
+#### These are essential for the map functionality.
+```shellscript
+# Install Leaflet for interactive maps
+npm install leaflet @types/leaflet
+
+# Install the Leaflet.draw plugin for drawing polygons
+npm install leaflet-draw @types/leaflet-draw
+
+# Note: You may also need to install the CSS for these libraries
+# either through a package or by importing the CSS files.
+```
 
 ### Core UI Components (shadcn/ui)
 
