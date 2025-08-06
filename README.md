@@ -97,11 +97,17 @@ npm run start
 
 That's it! After running these commands, you'll have a fully functional timeline dashboard with interactive maps, data visualization, and real-time polygon coloring. 🎉
 
+```
+### Output
+
 <img width="1916" height="964" alt="image" src="https://github.com/user-attachments/assets/7875a33d-467e-4fbf-979c-b8e9bec935dc" />
+
 
 <img width="1914" height="960" alt="image" src="https://github.com/user-attachments/assets/d2abadcc-da88-48c0-82ff-e796d068685f" />
 
+
 <img width="1918" height="840" alt="image" src="https://github.com/user-attachments/assets/dbdb0de6-f684-4669-ae5f-9d65d3d74b70" />
+
 
 <img width="1919" height="852" alt="image" src="https://github.com/user-attachments/assets/6f04b3dc-57d1-417f-8b66-79ce49fb24d0" />
 
