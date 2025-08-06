@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Here are the commands to set up and run this timeline dashboard project:
 
-## Getting Started
+## Initial Setup
 
-First, run the development server:
+### 1. Create a new Next.js project with TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```shellscript
+npx create-next-app@latest geo-dashboard --typescript --eslint --tailwind --app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Navigate to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shellscript
+cd geo-dashboard
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Install Required Dependencies
 
-## Learn More
+### Core UI Components (shadcn/ui)
 
-To learn more about Next.js, take a look at the following resources:
+```shellscript
+# Initialize shadcn/ui
+npx shadcn@latest init
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install required UI components
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+npx shadcn@latest add select
+npx shadcn@latest add switch
+npx shadcn@latest add badge
+npx shadcn@latest add dialog
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Additional Dependencies
 
-## Deploy on Vercel
+```shellscript
+# Install Lucide React for icons (if not already included)
+npm install lucide-react
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Install React hooks for advanced state management
+npm install react
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure Setup
+
+After installation, your project structure should look like this:
+
+```plaintext
+geo-dashboard/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/                      # shadcn/ui components
+│   ├── map/
+│   │   ├── data-source-dialog.tsx
+│   │   ├── map-controls.tsx
+│   │   ├── map-header.tsx
+│   │   ├── map-status.tsx
+│   │   └── polygon-list.tsx
+│   ├── timeline-slider.tsx
+│   ├── interactive-map.tsx
+│   └── data-sidebar.tsx
+├── hooks/
+│   ├── use-leaflet.ts
+│   └── use-polygon-drawing.ts
+├── lib/
+│   ├── utils.ts                 # shadcn/ui utilities
+│   ├── open-meteo.ts
+│   └── polygon-data-service.ts
+├── package.json
+└── tailwind.config.ts
+
+```
+
+## ‍️ Running the Project
+
+### Development Mode
+
+```shellscript
+npm run dev
+```
+
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+
+```shellscript
+# Build for production
+npm run build
+
+# Start production server
+npm run start
+
+
+That's it! After running these commands, you'll have a fully functional timeline dashboard with interactive maps, data visualization, and real-time polygon coloring. 🎉
+
+<img width="1916" height="964" alt="image" src="https://github.com/user-attachments/assets/7875a33d-467e-4fbf-979c-b8e9bec935dc" />
+
+<img width="1914" height="960" alt="image" src="https://github.com/user-attachments/assets/d2abadcc-da88-48c0-82ff-e796d068685f" />
+
+<img width="1918" height="840" alt="image" src="https://github.com/user-attachments/assets/dbdb0de6-f684-4669-ae5f-9d65d3d74b70" />
+
+<img width="1919" height="852" alt="image" src="https://github.com/user-attachments/assets/6f04b3dc-57d1-417f-8b66-79ce49fb24d0" />
+
+
